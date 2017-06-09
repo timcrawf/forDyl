@@ -35,15 +35,3 @@ class TwitterPage:
                     finalArray.append(noRandomCrap.strip())
         arrayToReturn=self.removeEmptyItems(finalArray)
         return arrayToReturn
-
-def main():
-    print "My Twitter"
-    timTwitter = TwitterPage("https://twitter.com/timcrawford88")
-    timTwitter.printTweets()
-
-    print "Ashton's Twitter"
-    ashtonTwitter = TwitterPage("https://twitter.com/aplusk")
-    ashtonTwitter.printTweets()
-
-if __name__=="__main__":
-    main()
